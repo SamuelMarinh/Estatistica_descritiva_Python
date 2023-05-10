@@ -17,7 +17,6 @@ dados.info()
 dh = dados.head(3)
 print(f'\nAnalise das 3 primeiras linhas:\n\n{dh}')
 
-
 # Observar as x ultimas linhas do conjunto de dados
 dt = dados.tail(3)
 print(f'\n\nAnalise das 3 ultimas linhas:\n\n{dt}')
@@ -32,7 +31,7 @@ print(f'\n\nValores ausentes:\n\n{dft}')
 
 # Preencher valores faltantes com a média   
 dcm = dados.fillna(dados['Age'].dropna().median(), inplace = True)
-print(f'\n\nPreenchimento dos valores faltantes com a média:\n\n{dft}')
+print(f'\n\nPreenchendo os valores faltantes com a média!!!')
 
 # Avaliar se os valores foram trocados
 dvr = dados.isnull().sum()
